@@ -1,7 +1,7 @@
 {
   "name": "gong-demo",
   "productName": "gong-demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -22,34 +22,22 @@
       "packagerConfig": {},
       "makers": [
         {
-          "name": "@electron-forge/maker-squirrel",
+          "name": "@electron-forge/maker-dmg",
           "config": {
-            "name": "gong_demo"
+            "format": "ULFO"
           }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
         }
       ]
     }
   },
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.51",
     "@electron-forge/maker-deb": "^6.0.0-beta.51",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.51",
     "@electron-forge/maker-rpm": "^6.0.0-beta.51",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.51",
     "@electron-forge/maker-zip": "^6.0.0-beta.51",

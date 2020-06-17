@@ -1,7 +1,7 @@
 {
   "name": "gong-demo",
-  "productName": "gong-demo",
-  "version": "3.0.0",
+  "productName": "peptide-processor",
+  "version": "4.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
